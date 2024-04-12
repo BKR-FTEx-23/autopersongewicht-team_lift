@@ -7,43 +7,49 @@ namespace Rennen
 {
     public class Auto
     {
-        public string farbe { get; set; }
+        public string Farbe { get; set; }
 
 
-        public double gewicht { get; set; }
+        public double Gewicht { get; set; }
 
 
-        public double leistung { get; set; }
+        public double Leistung { get; set; }
 
 
-        public double geschwindigkeit { get; set; }
+        public double Geschwindigkeit { get; set; }
 
 
-        public double maxGeschwindigkeit { get; set; }
+        public double MaxGeschwindigkeit { get; set; }
 
 
-        public string marke { get; set; }
+        public string Marke { get; set; }
 
         public Auto(string farbe, string marke, double gewicht, double leistung, 
             double geschwindigkeit, double maxGeschwindigkeit)
         {
-            this.farbe = farbe;
-            this.gewicht = gewicht;
-            this.leistung = leistung;
-            this.geschwindigkeit = geschwindigkeit;
-            this.maxGeschwindigkeit = maxGeschwindigkeit;
-            this.marke = marke;
+            this.Farbe = farbe;
+            this.Gewicht = gewicht;
+            this.Leistung = leistung;
+            this.Geschwindigkeit = geschwindigkeit;
+            this.MaxGeschwindigkeit = maxGeschwindigkeit;
+            this.Marke = marke;
         }
 
         public void Bremsen()
         {
-                       
-            throw new System.NotImplementedException();
+            if (this.Geschwindigkeit > 0)
+            {
+                Geschwindigkeit -= 1;
+            }                     
+            
         }
 
         public void Beschleunigen()
         {
-            throw new System.NotImplementedException();
+            if (this.Geschwindigkeit < this.MaxGeschwindigkeit)
+            {
+                Geschwindigkeit += 1;
+            }
         }
 
         public void Start()
