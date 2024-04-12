@@ -16,6 +16,11 @@ classDiagram
     }
 ```
 
+Datum | Änderung | Autor
+-- |-- | --
+12.04.24 | Erstellung Repo | Hendrik
+12.04.24 | Veränderung README | Hendrik
+
 ## Testbild in Repo
 ![Test lokales Bild](image1.jpg)
 
