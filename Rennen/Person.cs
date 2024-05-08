@@ -9,10 +9,13 @@ namespace Rennen
     {
         public Person(double gewicht)
         {
+
             this.Gewicht = gewicht;
         }
 
         public double Gewicht { get; set; }
+
+        public string Name { get; set; }
 
     }
 }
