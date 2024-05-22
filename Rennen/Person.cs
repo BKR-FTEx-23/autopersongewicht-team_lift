@@ -7,16 +7,19 @@ namespace Rennen
 {
     public class Person
     {
-        /*
+        
         public Person(double gewicht)
         {
 
             this.Gewicht = gewicht;
         }
-        */
-        public static int Gewicht = 100;
+        private double Gewicht;
 
-        //Person p1 = new Person(100);
+        public double GetGewicht ()
+        {
+            return Gewicht;
+        }
+
 
     }
 }

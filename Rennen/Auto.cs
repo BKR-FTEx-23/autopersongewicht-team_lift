@@ -8,11 +8,13 @@ namespace Rennen
 {
     public class Auto
     {
-        public double Gewicht;
-        public int MinAnzahlPersonen;
-        public int MaxAnzahlPersonen;
-        public double GesamtGewicht;
-        public int AnzahlPersonen;
+        private double Gewicht;
+        private int MinAnzahlPersonen;
+        private int MaxAnzahlPersonen;
+        private double GesamtGewicht;
+        private int AnzahlPersonen;
+        
+
         
 
         public void Einsteigen()
@@ -31,9 +33,13 @@ namespace Rennen
             }
 
         }
-        public double GesamtGewichtBerechnen()
+        public double GesamtGewichtBerechnen(Person person)
         {
-            return GesamtGewicht = Gewicht + (AnzahlPersonen*Person.Gewicht);
+            return GesamtGewicht = Gewicht + (AnzahlPersonen*person.GetGewicht());
+        }
+        public int GetAnzahl()
+        {
+            return AnzahlPersonen;
         }
 
         public Auto(double gewicht, int minPerson, int maxPerson)
