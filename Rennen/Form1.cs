@@ -19,12 +19,13 @@ namespace Rennen
 
         private void btnEinsteigen_Click(object sender, EventArgs e)
         {
-            txtAusgabe.Text=
+            txtAusgabe.Text = "";
         }
 
         private void btnAussteigen_Click(object sender, EventArgs e)
         {
-            txtAusgabe.Text=
+            txtAusgabe.Text = "";
         }
+        
     }
 }
