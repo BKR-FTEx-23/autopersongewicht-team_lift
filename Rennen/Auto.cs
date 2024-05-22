@@ -8,9 +8,9 @@ namespace Rennen
 {
     public class Auto
     {
-        public double Gewicht = 2000;
-        public int MinAnzahlPersonen = 1;
-        public int MaxAnzahlPersonen = 6;
+        public double Gewicht;
+        public int MinAnzahlPersonen;
+        public int MaxAnzahlPersonen;
         public double GesamtGewicht;
         public int AnzahlPersonen;
         
@@ -36,10 +36,11 @@ namespace Rennen
             return GesamtGewicht = Gewicht + (AnzahlPersonen*Person.Gewicht);
         }
 
-        public Auto(double gewicht, int maxPerson)
+        public Auto(double gewicht, int minPerson, int maxPerson)
         {            
             this.Gewicht = gewicht;
             this.MaxAnzahlPersonen = maxPerson;
+            this.MinAnzahlPersonen = minPerson;
         }
 
         

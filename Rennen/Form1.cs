@@ -12,20 +12,28 @@ namespace Rennen
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
         }
+        Auto auto1 = new Auto(2000, 1, 6);
 
         private void btnEinsteigen_Click(object sender, EventArgs e)
         {
-            txtAusgabe.Text = "";
+            auto1.Einsteigen();
         }
 
         private void btnAussteigen_Click(object sender, EventArgs e)
         {
-            txtAusgabe.Text = "";
+            auto1.Aussteigen();
         }
-        
+        public void Ausgabe()
+        {
+            double gewicht = auto1.GesamtGewichtBerechnen();
+            txtAusgabe.Text = "Anzahl Personen: " + auto1.AnzahlPersonen +
+                                "Gewicht: " + gewicht;
+        }
+
     }
 }
