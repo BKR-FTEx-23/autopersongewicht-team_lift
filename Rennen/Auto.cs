@@ -57,8 +57,8 @@ namespace Rennen
         {
             return $"{Marke} ({Gewicht} kg) " + System.Environment.NewLine +
                 $"Maximale Personen: {MaxAnzahlPersonen}" + System.Environment.NewLine +
-                $"Im Auto befindet sich: {System.Environment.NewLine}{GetPassagiere()}" +
-                System.Environment.NewLine +
+                $"Im Auto befindet sich: {personenImAuto.Count} Personen" + System.Environment.NewLine +
+                $"{GetPassagiere()}" + System.Environment.NewLine +
                 $"Gesamtgewicht: {GesamtGewichtBerechnen()}";
         }
 

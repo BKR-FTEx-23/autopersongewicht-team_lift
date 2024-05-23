@@ -16,9 +16,9 @@ namespace Rennen
         public Form1()
         {
             InitializeComponent();
-            txtAusgabe.Text = auto.ToString();
+            txtAusgabe.Text = autoVW.ToString();
         }
-        Auto auto = new Auto("VW Golf",1200, 1, 6);
+        Auto autoVW = new Auto("VW Golf",1200, 1, 6);
         Person person1 = new Person("Anne", 65);
         Person person2 = new Person("Peter", 85);
 
@@ -27,26 +27,26 @@ namespace Rennen
         {
             if (chBox1.Checked)
             {
-                auto.Einsteigen(person1);
+                autoVW.Einsteigen(person1);
             }
             if (chBox2.Checked)
             {
-                auto.Einsteigen(person2);
+                autoVW.Einsteigen(person2);
             }
-            txtAusgabe.Text = auto.ToString();
+            txtAusgabe.Text = autoVW.ToString();
         }
 
         private void btnAussteigen_Click(object sender, EventArgs e)
         {
             if (chBox1.Checked)
             {
-                auto.Aussteigen(person1);
+                autoVW.Aussteigen(person1);
             }
             if (chBox2.Checked)
             {
-                auto.Aussteigen(person2);
+                autoVW.Aussteigen(person2);
             }
-            txtAusgabe.Text = auto.ToString();
+            txtAusgabe.Text = autoVW.ToString();
             
         }
 
