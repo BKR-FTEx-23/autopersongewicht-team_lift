@@ -31,13 +31,16 @@
             this.btnEinsteigen = new System.Windows.Forms.Button();
             this.btnAussteigen = new System.Windows.Forms.Button();
             this.txtAusgabe = new System.Windows.Forms.TextBox();
+            this.chBox1 = new System.Windows.Forms.CheckBox();
+            this.chBox2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnEinsteigen
             // 
-            this.btnEinsteigen.Location = new System.Drawing.Point(40, 12);
+            this.btnEinsteigen.Location = new System.Drawing.Point(55, 18);
+            this.btnEinsteigen.Margin = new System.Windows.Forms.Padding(4);
             this.btnEinsteigen.Name = "btnEinsteigen";
-            this.btnEinsteigen.Size = new System.Drawing.Size(208, 134);
+            this.btnEinsteigen.Size = new System.Drawing.Size(286, 201);
             this.btnEinsteigen.TabIndex = 0;
             this.btnEinsteigen.Text = "Einsteigen";
             this.btnEinsteigen.UseVisualStyleBackColor = true;
@@ -45,9 +48,10 @@
             // 
             // btnAussteigen
             // 
-            this.btnAussteigen.Location = new System.Drawing.Point(40, 215);
+            this.btnAussteigen.Location = new System.Drawing.Point(55, 322);
+            this.btnAussteigen.Margin = new System.Windows.Forms.Padding(4);
             this.btnAussteigen.Name = "btnAussteigen";
-            this.btnAussteigen.Size = new System.Drawing.Size(208, 134);
+            this.btnAussteigen.Size = new System.Drawing.Size(286, 201);
             this.btnAussteigen.TabIndex = 1;
             this.btnAussteigen.Text = "Aussteigen";
             this.btnAussteigen.UseVisualStyleBackColor = true;
@@ -55,20 +59,44 @@
             // 
             // txtAusgabe
             // 
-            this.txtAusgabe.Location = new System.Drawing.Point(287, 12);
+            this.txtAusgabe.Location = new System.Drawing.Point(395, 18);
+            this.txtAusgabe.Margin = new System.Windows.Forms.Padding(4);
             this.txtAusgabe.Multiline = true;
             this.txtAusgabe.Name = "txtAusgabe";
-            this.txtAusgabe.Size = new System.Drawing.Size(399, 337);
+            this.txtAusgabe.Size = new System.Drawing.Size(547, 504);
             this.txtAusgabe.TabIndex = 2;
+            // 
+            // chBox1
+            // 
+            this.chBox1.AutoSize = true;
+            this.chBox1.Location = new System.Drawing.Point(55, 227);
+            this.chBox1.Name = "chBox1";
+            this.chBox1.Size = new System.Drawing.Size(85, 29);
+            this.chBox1.TabIndex = 3;
+            this.chBox1.Text = "Anne";
+            this.chBox1.UseVisualStyleBackColor = true;
+            // 
+            // chBox2
+            // 
+            this.chBox2.AutoSize = true;
+            this.chBox2.Location = new System.Drawing.Point(55, 263);
+            this.chBox2.Name = "chBox2";
+            this.chBox2.Size = new System.Drawing.Size(84, 29);
+            this.chBox2.TabIndex = 4;
+            this.chBox2.Text = "Peter";
+            this.chBox2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1100, 675);
+            this.Controls.Add(this.chBox2);
+            this.Controls.Add(this.chBox1);
             this.Controls.Add(this.txtAusgabe);
             this.Controls.Add(this.btnAussteigen);
             this.Controls.Add(this.btnEinsteigen);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -81,6 +109,8 @@
         private System.Windows.Forms.Button btnEinsteigen;
         private System.Windows.Forms.Button btnAussteigen;
         private System.Windows.Forms.TextBox txtAusgabe;
+        private System.Windows.Forms.CheckBox chBox1;
+        private System.Windows.Forms.CheckBox chBox2;
     }
 }
 

@@ -7,17 +7,25 @@ namespace Rennen
 {
     public class Person
     {
-        
-        public Person(double gewicht)
-        {
 
+        public Person(string name,double gewicht)
+        {
+            this.Name = name;
             this.Gewicht = gewicht;
         }
         private double Gewicht;
-
-        public double GetGewicht ()
+        private string Name;
+        public double GetGewicht()
         {
             return Gewicht;
+        }
+        public string GetName()
+        {
+            return Name;
+        }
+        public override string ToString()
+        {
+            return $"{Name} ({Gewicht} kg)";
         }
 
 

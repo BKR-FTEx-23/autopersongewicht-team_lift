@@ -16,26 +16,38 @@ namespace Rennen
         public Form1()
         {
             InitializeComponent();
+            txtAusgabe.Text = auto.ToString();
         }
-        Auto auto1 = new Auto(2000, 1, 6);
-        Person p1 = new Person(100);
+        Auto auto = new Auto("VW Golf",1200, 1, 6);
+        Person person1 = new Person("Anne", 65);
+        Person person2 = new Person("Peter", 85);
+
 
         private void btnEinsteigen_Click(object sender, EventArgs e)
         {
-            auto1.Einsteigen();
-            Ausgabe();
+            if (chBox1.Checked)
+            {
+                auto.Einsteigen(person1);
+            }
+            if (chBox2.Checked)
+            {
+                auto.Einsteigen(person2);
+            }
+            txtAusgabe.Text = auto.ToString();
         }
 
         private void btnAussteigen_Click(object sender, EventArgs e)
         {
-            auto1.Aussteigen();
-            Ausgabe();
-        }
-        public void Ausgabe()
-        {
-            double gewicht = auto1.GesamtGewichtBerechnen(p1);
-            txtAusgabe.Text = "Anzahl Personen: " + auto1.GetAnzahl() +
-                                System.Environment.NewLine+"Gewicht: " + gewicht;
+            if (chBox1.Checked)
+            {
+                auto.Aussteigen(person1);
+            }
+            if (chBox2.Checked)
+            {
+                auto.Aussteigen(person2);
+            }
+            txtAusgabe.Text = auto.ToString();
+            
         }
 
     }
