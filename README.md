@@ -1,7 +1,41 @@
 # Autorennen
 ## Inhalt
 Testprojekt für die Schule zwecks Klassen und Konstruktoren. 
+```mermaid
+gitGraph
+    branch master
+    commit id: "Projektdateien hinzufügen"
+    commit id: ".gitattributes, .gitignore und README.md hinzufügen"
+    branch methodenerstellung
+    commit id: "added Methode Beschleunigen und Bremsen"
+    commit id: "Update README.md"
+    commit id: "Update README.md"
+    commit id: "Update README.md"
+    commit id: "Update README.md"
+    commit id: "logofile"
+    commit id: "Update README.md"
+    commit id: "Einfügen der Oberfläche"
+    checkout master
+    commit id: "Merge pull request #1 from Hendrik-He/Form1-+-Oberfläche"
+    checkout methodenerstellung
+    commit id: "Klassen bearbeitet und eingeschränkt"
+    commit id: "Merge pull request #2 from Hendrik-He/Klassen"
+    commit id: "Name bei Person hinzugefügt"
+    commit id: "Letzte Änderung: Funktion Person.Gewicht angelegt"
+    commit id: "Fertig"
+    checkout master
+    commit id: "Klassenvariablen angepasst"
+    commit id: "Alle Methoden angepasst und mehrere überarbeitet. Mehrere Methoden ..."
+merge methodenerstellung
+    commit id: "Namemethode fehlerbehbung"
+    commit id: "Programm fertiggestellt und überarbeitet"
+    commit id: "Merge pull request #1 from BKR-FTEx-23/Methodenerstellung"
+    commit id: "personImAuto.Count zu auto.ToString hinzugefügt"
 
+
+
+
+```
 ```mermaid
 classDiagram
     class Auto {
