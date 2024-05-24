@@ -73,8 +73,9 @@ __Oeffentliche Methoden__
 + __Aussteigen__ löscht die uebergebene Person aus der Liste, soweit die Min. Anzahl nicht unterschritten wird.
 + __GesamtGewichtBerechnen__ addiert das Gewicht der sich in der Liste befindenen Personen und gibt das Gesamtgewicht zurück.
 + __GetPassagiere__ gibt eine Zeichenkette zurück, die die Personen tabellarisch aufzählt, welche sich im Auto befinden.
-+ __public override string ToString()__,  ueberschreibt die __ToString__ Methode der Basisklasse. Gibt den Namen und das Gewicht in einer Zeichenfolge zurueck.
++ __public override string ToString()__,  ueberschreibt die __ToString__ Methode der Basisklasse. Gibt die zum Auto gehoerenden Parameter in Tabellenform zurück.
 
+__public Auto__ initialisiert ein neues Auto-Objekt mit den gegebenen Parametern.
 
 
 
