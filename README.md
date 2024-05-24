@@ -4,16 +4,32 @@ Testprojekt für die Schule zwecks Klassen und Konstruktoren.
 
 ```mermaid
 classDiagram
-
-    class Auto{
-      +String Farbe
-      +String Marke
-      +double Geschwindigkeit
-      +double Leistung
-      +double MaxGeschwindigkeit
-      +Bremsen()
-      +Beschleunigen()
+    class Auto {
+        -string Marke
+        -double Gewicht
+        -int MinAnzahlPersonen
+        -int MaxAnzahlPersonen
+        -double GesamtGewicht
+        -List~Person~ personenImAuto
+        +void Einsteigen(Person person)
+        +void Aussteigen(Person person)
+        +double GesamtGewichtBerechnen()
+        +string GetPassagiere()
+        +string ToString()
+        +Auto(string marke, double gewicht, int minPerson, int maxPerson)
     }
+
+    class Person {
+        -string Name
+        -double Gewicht
+        +Person(string name, double gewicht)
+        +double GetGewicht()
+        +string GetName()
+        +string ToString()
+    }
+
+    Auto --> Person : hat mehrere
+
 ```
 
 Datum | Änderung | Autor
