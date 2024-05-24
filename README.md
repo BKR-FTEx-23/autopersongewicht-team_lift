@@ -1,41 +1,46 @@
-# Autorennen
+# Auto-Programm
 ## Inhalt
 Testprojekt für die Schule zwecks Klassen und Konstruktoren. 
+## Testbild in Repo
+![Test lokales Bild](image1.jpg)
+## Git-Diagramm
 ```mermaid
 gitGraph
-    branch master
     commit id: "Projektdateien hinzufügen"
     commit id: ".gitattributes, .gitignore und README.md hinzufügen"
     branch methodenerstellung
     commit id: "added Methode Beschleunigen und Bremsen"
-    commit id: "Update README.md"
-    commit id: "Update README.md"
-    commit id: "Update README.md"
-    commit id: "Update README.md"
-    commit id: "logofile"
-    commit id: "Update README.md"
     commit id: "Einfügen der Oberfläche"
-    checkout master
-    commit id: "Merge pull request #1 from Hendrik-He/Form1-+-Oberfläche"
-    checkout methodenerstellung
     commit id: "Klassen bearbeitet und eingeschränkt"
-    commit id: "Merge pull request #2 from Hendrik-He/Klassen"
+    commit id: "Merge pull request #2 from Hendrik"
     commit id: "Name bei Person hinzugefügt"
     commit id: "Letzte Änderung: Funktion Person.Gewicht angelegt"
     commit id: "Fertig"
-    checkout master
+    checkout main
+    checkout methodenerstellung
+    checkout main
     commit id: "Klassenvariablen angepasst"
     commit id: "Alle Methoden angepasst und mehrere überarbeitet. Mehrere Methoden ..."
-merge methodenerstellung
+    merge methodenerstellung
     commit id: "Namemethode fehlerbehbung"
     commit id: "Programm fertiggestellt und überarbeitet"
-    commit id: "Merge pull request #1 from BKR-FTEx-23/Methodenerstellung"
     commit id: "personImAuto.Count zu auto.ToString hinzugefügt"
-
-
-
-
+    branch Sascha-README
+    branch Mayknecht-README
+    checkout Sascha-README
+    commit id: "Erste Änderungen Funktionsbeschreibung"
+    commit id: "Final Funktionsbeschreibung"
+    checkout Mayknecht-README
+    commit id: "Diagramme erstellt und eingefügt"
+    checkout main
+    merge Sascha-README
+    merge Mayknecht-README
+    branch Hendrik-README
+    commit id: "Finale Änderungen"
+    checkout main
+    merge Hendrik-README
 ```
+## Klassendiagramm
 ```mermaid
 classDiagram
     class Auto {
@@ -65,14 +70,6 @@ classDiagram
     Auto --> Person : hat mehrere
 
 ```
-
-Datum | Änderung | Autor
--- |-- | --
-12.04.24 | Erstellung Repo | Hendrik
-12.04.24 | Veränderung README | Hendrik
-
-## Testbild in Repo
-![Test lokales Bild](image1.jpg)
 
 ## Funktionsbeschreibung
 ### Programm.cs
