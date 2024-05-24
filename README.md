@@ -1,7 +1,5 @@
 # Auto-Programm
-## Inhalt
-Testprojekt für die Schule zwecks Klassen und Konstruktoren. 
-## Testbild in Repo
+## Das Auto
 ![Test lokales Bild](image1.jpg)
 ## Git-Diagramm
 ```mermaid
@@ -37,6 +35,7 @@ gitGraph
     merge Mayknecht-README
     branch Hendrik-README
     commit id: "Finale Änderungen"
+    commit id: "Fehlerkorrektur"
     checkout main
     merge Hendrik-README
 ```
