@@ -13,9 +13,21 @@ namespace Rennen
         private double Gewicht;
         private int MinAnzahlPersonen;
         private int MaxAnzahlPersonen;
-        private double GesamtGewicht;
         private List<Person> personenImAuto;
 
+        private double GesamtGewicht
+        {
+            get
+            {
+                GesamtGewicht = Gewicht;
+                foreach (var person in personenImAuto)
+                {
+                    GesamtGewicht += person.Gewicht;
+                }
+                return GesamtGewicht;
+            }
+            set { }
+        }
 
         public void Einsteigen(Person person)
         {
@@ -37,12 +49,12 @@ namespace Rennen
             double gesamtgewicht = Gewicht;
             foreach (var person in personenImAuto)
             {
-                gesamtgewicht += person.GetGewicht();
+                gesamtgewicht += person.Gewicht;
             }
             return gesamtgewicht;
         }
 
-        public string GetPassagiere()
+        public string GetPassagiereString()
         {
             string passagiere = "";
 
@@ -53,12 +65,16 @@ namespace Rennen
 
             return passagiere;
         }
+        public List<Person> GetPassagiere()
+        {
+            return new List<Person>(personenImAuto);
+        }
         public override string ToString()
         {
             return $"{Marke} ({Gewicht} kg) " + System.Environment.NewLine +
                 $"Maximale Personen: {MaxAnzahlPersonen}" + System.Environment.NewLine +
                 $"Im Auto befindet sich: {personenImAuto.Count} Personen" + System.Environment.NewLine +
-                $"{GetPassagiere()}" + System.Environment.NewLine +
+                $"{GetPassagiereString()}" + System.Environment.NewLine +
                 $"Gesamtgewicht: {GesamtGewichtBerechnen()}";
         }
 
