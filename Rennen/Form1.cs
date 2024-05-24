@@ -20,7 +20,7 @@ namespace Rennen
         }
         Auto autoVW = new Auto("VW Golf",1200, 1, 6);
         Person person1 = new Person("Anne", 65);
-        Person person2 = new Person("Peter", 85);
+        Person person2 = new Person("Peter", 85,555);
 
 
         private void btnEinsteigen_Click(object sender, EventArgs e)
